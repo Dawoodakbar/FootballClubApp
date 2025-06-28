@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct FootballClubApp: App {
@@ -15,6 +16,7 @@ struct FootballClubApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(ClubManager())
         }
     }
 }

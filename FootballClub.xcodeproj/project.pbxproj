@@ -12,7 +12,33 @@
 		185572D82E106ABF00F15EBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185572D72E106ABF00F15EBB /* Assets.xcassets */; };
 		185572DB2E106ABF00F15EBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185572DA2E106ABF00F15EBB /* Preview Assets.xcassets */; };
 		185572DD2E106ABF00F15EBB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572DC2E106ABF00F15EBB /* Persistence.swift */; };
-		185572E02E106ABF00F15EBB /* FootballClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185572DE2E106ABF00F15EBB /* FootballClub.xcdatamodeld */; };
+		185572EC2E106B4800F15EBB /* ClubModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572EB2E106B4800F15EBB /* ClubModels.swift */; };
+		185572EE2E106B5800F15EBB /* ClubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572ED2E106B5800F15EBB /* ClubManager.swift */; };
+		185572F02E106B7100F15EBB /* AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572EF2E106B7100F15EBB /* AnalyticsService.swift */; };
+		185572F22E106B7600F15EBB /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F12E106B7600F15EBB /* NotificationManager.swift */; };
+		185572F42E106B8600F15EBB /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F32E106B8500F15EBB /* WeatherService.swift */; };
+		185573042E106BDD00F15EBB /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F52E106BDC00F15EBB /* AnalyticsView.swift */; };
+		185573052E106BDD00F15EBB /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F62E106BDC00F15EBB /* ScheduleView.swift */; };
+		185573062E106BDD00F15EBB /* EditClubProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F72E106BDC00F15EBB /* EditClubProfileView.swift */; };
+		185573072E106BDD00F15EBB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F82E106BDC00F15EBB /* ProfileView.swift */; };
+		185573082E106BDD00F15EBB /* AddMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572F92E106BDC00F15EBB /* AddMatchView.swift */; };
+		185573092E106BDD00F15EBB /* MatchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FA2E106BDC00F15EBB /* MatchDetailView.swift */; };
+		1855730A2E106BDD00F15EBB /* AdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FB2E106BDC00F15EBB /* AdminView.swift */; };
+		1855730B2E106BDD00F15EBB /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FC2E106BDC00F15EBB /* AddPlayerView.swift */; };
+		1855730C2E106BDD00F15EBB /* AddTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FD2E106BDC00F15EBB /* AddTrainingView.swift */; };
+		1855730D2E106BDD00F15EBB /* EditPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FE2E106BDC00F15EBB /* EditPlayerView.swift */; };
+		1855730E2E106BDD00F15EBB /* MatchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185572FF2E106BDC00F15EBB /* MatchesView.swift */; };
+		1855730F2E106BDD00F15EBB /* TrainingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573002E106BDD00F15EBB /* TrainingDetailView.swift */; };
+		185573102E106BDD00F15EBB /* PlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573012E106BDD00F15EBB /* PlayersView.swift */; };
+		185573112E106BDD00F15EBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573022E106BDD00F15EBB /* HomeView.swift */; };
+		185573122E106BDD00F15EBB /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573032E106BDD00F15EBB /* PlayerDetailView.swift */; };
+		185573152E106CF300F15EBB /* FootballClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 185573132E106CF300F15EBB /* FootballClub.xcdatamodeld */; };
+		1855731A2E106DAE00F15EBB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185573192E106DAE00F15EBB /* CoreData.framework */; };
+		1855731C2E106DB500F15EBB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1855731B2E106DB400F15EBB /* SwiftUI.framework */; };
+		1855731E2E106DBC00F15EBB /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1855731D2E106DBB00F15EBB /* PhotosUI.framework */; };
+		185573202E106DC600F15EBB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1855731F2E106DC600F15EBB /* UserNotifications.framework */; };
+		185573222E106DDD00F15EBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185573212E106DDC00F15EBB /* CoreLocation.framework */; };
+		185573242E106DE800F15EBB /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185573232E106DE800F15EBB /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +48,35 @@
 		185572D72E106ABF00F15EBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185572DA2E106ABF00F15EBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		185572DC2E106ABF00F15EBB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		185572DF2E106ABF00F15EBB /* FootballClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballClub.xcdatamodel; sourceTree = "<group>"; };
+		185572EB2E106B4800F15EBB /* ClubModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubModels.swift; sourceTree = "<group>"; };
+		185572ED2E106B5800F15EBB /* ClubManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubManager.swift; sourceTree = "<group>"; };
+		185572EF2E106B7100F15EBB /* AnalyticsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsService.swift; sourceTree = "<group>"; };
+		185572F12E106B7600F15EBB /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		185572F32E106B8500F15EBB /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		185572F52E106BDC00F15EBB /* AnalyticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		185572F62E106BDC00F15EBB /* ScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		185572F72E106BDC00F15EBB /* EditClubProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditClubProfileView.swift; sourceTree = "<group>"; };
+		185572F82E106BDC00F15EBB /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		185572F92E106BDC00F15EBB /* AddMatchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMatchView.swift; sourceTree = "<group>"; };
+		185572FA2E106BDC00F15EBB /* MatchDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailView.swift; sourceTree = "<group>"; };
+		185572FB2E106BDC00F15EBB /* AdminView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminView.swift; sourceTree = "<group>"; };
+		185572FC2E106BDC00F15EBB /* AddPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
+		185572FD2E106BDC00F15EBB /* AddTrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrainingView.swift; sourceTree = "<group>"; };
+		185572FE2E106BDC00F15EBB /* EditPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPlayerView.swift; sourceTree = "<group>"; };
+		185572FF2E106BDC00F15EBB /* MatchesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchesView.swift; sourceTree = "<group>"; };
+		185573002E106BDD00F15EBB /* TrainingDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingDetailView.swift; sourceTree = "<group>"; };
+		185573012E106BDD00F15EBB /* PlayersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersView.swift; sourceTree = "<group>"; };
+		185573022E106BDD00F15EBB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		185573032E106BDD00F15EBB /* PlayerDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
+		185573142E106CF300F15EBB /* FootballClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballClub.xcdatamodel; sourceTree = "<group>"; };
+		185573162E106D3F00F15EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		185573172E106D4900F15EBB /* FootballClub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FootballClub.entitlements; sourceTree = "<group>"; };
+		185573192E106DAE00F15EBB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1855731B2E106DB400F15EBB /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		1855731D2E106DBB00F15EBB /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		1855731F2E106DC600F15EBB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		185573212E106DDC00F15EBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		185573232E106DE800F15EBB /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +84,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185573202E106DC600F15EBB /* UserNotifications.framework in Frameworks */,
+				185573222E106DDD00F15EBB /* CoreLocation.framework in Frameworks */,
+				1855731C2E106DB500F15EBB /* SwiftUI.framework in Frameworks */,
+				185573242E106DE800F15EBB /* Charts.framework in Frameworks */,
+				1855731A2E106DAE00F15EBB /* CoreData.framework in Frameworks */,
+				1855731E2E106DBC00F15EBB /* PhotosUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +101,7 @@
 			children = (
 				185572D22E106ABE00F15EBB /* FootballClub */,
 				185572D12E106ABE00F15EBB /* Products */,
+				185573182E106DAE00F15EBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +116,17 @@
 		185572D22E106ABE00F15EBB /* FootballClub */ = {
 			isa = PBXGroup;
 			children = (
+				185573172E106D4900F15EBB /* FootballClub.entitlements */,
+				185573162E106D3F00F15EBB /* Info.plist */,
+				185572EA2E106B0900F15EBB /* Service  */,
+				185572E92E106AFA00F15EBB /* Coredata */,
+				185572E82E106AEB00F15EBB /* ViewModel */,
+				185572E72E106AE400F15EBB /* View */,
+				185572E62E106AD200F15EBB /* Model */,
 				185572D32E106ABE00F15EBB /* FootballClubApp.swift */,
 				185572D52E106ABE00F15EBB /* ContentView.swift */,
 				185572D72E106ABF00F15EBB /* Assets.xcassets */,
-				185572DC2E106ABF00F15EBB /* Persistence.swift */,
-				185572DE2E106ABF00F15EBB /* FootballClub.xcdatamodeld */,
+				185573132E106CF300F15EBB /* FootballClub.xcdatamodeld */,
 				185572D92E106ABF00F15EBB /* Preview Content */,
 			);
 			path = FootballClub;
@@ -71,6 +138,75 @@
 				185572DA2E106ABF00F15EBB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		185572E62E106AD200F15EBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				185572EB2E106B4800F15EBB /* ClubModels.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185572E72E106AE400F15EBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				185572F92E106BDC00F15EBB /* AddMatchView.swift */,
+				185572FC2E106BDC00F15EBB /* AddPlayerView.swift */,
+				185572FD2E106BDC00F15EBB /* AddTrainingView.swift */,
+				185572FB2E106BDC00F15EBB /* AdminView.swift */,
+				185572F52E106BDC00F15EBB /* AnalyticsView.swift */,
+				185572F72E106BDC00F15EBB /* EditClubProfileView.swift */,
+				185572FE2E106BDC00F15EBB /* EditPlayerView.swift */,
+				185573022E106BDD00F15EBB /* HomeView.swift */,
+				185572FA2E106BDC00F15EBB /* MatchDetailView.swift */,
+				185572FF2E106BDC00F15EBB /* MatchesView.swift */,
+				185573032E106BDD00F15EBB /* PlayerDetailView.swift */,
+				185573012E106BDD00F15EBB /* PlayersView.swift */,
+				185572F82E106BDC00F15EBB /* ProfileView.swift */,
+				185572F62E106BDC00F15EBB /* ScheduleView.swift */,
+				185573002E106BDD00F15EBB /* TrainingDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185572E82E106AEB00F15EBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				185572ED2E106B5800F15EBB /* ClubManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		185572E92E106AFA00F15EBB /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				185572DC2E106ABF00F15EBB /* Persistence.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		185572EA2E106B0900F15EBB /* Service  */ = {
+			isa = PBXGroup;
+			children = (
+				185572F32E106B8500F15EBB /* WeatherService.swift */,
+				185572F12E106B7600F15EBB /* NotificationManager.swift */,
+				185572EF2E106B7100F15EBB /* AnalyticsService.swift */,
+			);
+			path = "Service ";
+			sourceTree = "<group>";
+		};
+		185573182E106DAE00F15EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				185573232E106DE800F15EBB /* Charts.framework */,
+				185573212E106DDC00F15EBB /* CoreLocation.framework */,
+				1855731F2E106DC600F15EBB /* UserNotifications.framework */,
+				1855731D2E106DBB00F15EBB /* PhotosUI.framework */,
+				1855731B2E106DB400F15EBB /* SwiftUI.framework */,
+				185573192E106DAE00F15EBB /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +280,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				185572DD2E106ABF00F15EBB /* Persistence.swift in Sources */,
+				185573072E106BDD00F15EBB /* ProfileView.swift in Sources */,
+				185572F42E106B8600F15EBB /* WeatherService.swift in Sources */,
+				185572EC2E106B4800F15EBB /* ClubModels.swift in Sources */,
+				185573122E106BDD00F15EBB /* PlayerDetailView.swift in Sources */,
+				185573042E106BDD00F15EBB /* AnalyticsView.swift in Sources */,
+				185573062E106BDD00F15EBB /* EditClubProfileView.swift in Sources */,
 				185572D62E106ABE00F15EBB /* ContentView.swift in Sources */,
-				185572E02E106ABF00F15EBB /* FootballClub.xcdatamodeld in Sources */,
+				185573092E106BDD00F15EBB /* MatchDetailView.swift in Sources */,
+				185573102E106BDD00F15EBB /* PlayersView.swift in Sources */,
 				185572D42E106ABE00F15EBB /* FootballClubApp.swift in Sources */,
+				1855730C2E106BDD00F15EBB /* AddTrainingView.swift in Sources */,
+				185572F02E106B7100F15EBB /* AnalyticsService.swift in Sources */,
+				185573152E106CF300F15EBB /* FootballClub.xcdatamodeld in Sources */,
+				1855730F2E106BDD00F15EBB /* TrainingDetailView.swift in Sources */,
+				185572F22E106B7600F15EBB /* NotificationManager.swift in Sources */,
+				185573052E106BDD00F15EBB /* ScheduleView.swift in Sources */,
+				1855730D2E106BDD00F15EBB /* EditPlayerView.swift in Sources */,
+				185573082E106BDD00F15EBB /* AddMatchView.swift in Sources */,
+				1855730E2E106BDD00F15EBB /* MatchesView.swift in Sources */,
+				1855730A2E106BDD00F15EBB /* AdminView.swift in Sources */,
+				1855730B2E106BDD00F15EBB /* AddPlayerView.swift in Sources */,
+				185573112E106BDD00F15EBB /* HomeView.swift in Sources */,
+				185572EE2E106B5800F15EBB /* ClubManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +428,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootballClub/FootballClub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FootballClub/Preview Content\"";
 				DEVELOPMENT_TEAM = 67LX5VUZH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballClub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,12 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FootballClub/FootballClub.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FootballClub/Preview Content\"";
 				DEVELOPMENT_TEAM = 67LX5VUZH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballClub/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -349,13 +509,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		185572DE2E106ABF00F15EBB /* FootballClub.xcdatamodeld */ = {
+		185573132E106CF300F15EBB /* FootballClub.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				185572DF2E106ABF00F15EBB /* FootballClub.xcdatamodel */,
+				185573142E106CF300F15EBB /* FootballClub.xcdatamodel */,
 			);
-			currentVersion = 185572DF2E106ABF00F15EBB /* FootballClub.xcdatamodel */;
-			path = FootballClub.xcdatamodeld;
+			currentVersion = 185573142E106CF300F15EBB /* FootballClub.xcdatamodel */;
+			name = FootballClub.xcdatamodeld;
+			path = "../../../../Downloads/project 4/FootballClubApp/Core Data/FootballClub.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
