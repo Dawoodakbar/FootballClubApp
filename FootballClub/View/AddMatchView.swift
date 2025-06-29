@@ -127,7 +127,14 @@ struct AddMatchView: View {
     }
 }
 
+
+struct AddMatchView_PreView: PreviewProvider {
+    static var previews: some View {
+        AddMatchView()
+               .environmentObject(ClubManager())
+        
+    }
+}
 //#Preview {
-//    AddMatchView()
-//        .environmentObject(ClubManager())
+//
 //}

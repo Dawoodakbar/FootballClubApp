@@ -8,54 +8,62 @@
 import SwiftUI
 import CoreData
 
-import SwiftUI
-
 struct ContentView: View {
     @StateObject private var clubManager = ClubManager()
+    @State private var isLoading = false
     
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
+        Group {
+            if isLoading {
+                LoadingView {
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        isLoading = false
+                    }
                 }
-            
-            PlayersView()
-                .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Players")
+            } else {
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house.fill")
+                            Text("Home")
+                        }
+                    
+                    PlayersView()
+                        .tabItem {
+                            Image(systemName: "person.3.fill")
+                            Text("Players")
+                        }
+                    
+                    MatchesView()
+                        .tabItem {
+                            Image(systemName: "trophy.fill")
+                            Text("Matches")
+                        }
+                    
+                    ScheduleView()
+                        .tabItem {
+                            Image(systemName: "calendar")
+                            Text("Schedule")
+                        }
+                    
+                    ProfileView()
+                        .tabItem {
+                            Image(systemName: "building.2.fill")
+                            Text("Club")
+                        }
+                    
+                    AdminView()
+                        .tabItem {
+                            Image(systemName: "gearshape.fill")
+                            Text("Admin")
+                        }
                 }
-            
-            MatchesView()
-                .tabItem {
-                    Image(systemName: "trophy.fill")
-                    Text("Matches")
-                }
-            
-            ScheduleView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Schedule")
-                }
-            
-            ProfileView()
-                .tabItem {
-                    Image(systemName: "building.2.fill")
-                    Text("Club")
-                }
-            
-            AdminView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("Admin")
-                }
+                .environmentObject(clubManager)
+                .accentColor(Color(clubManager.clubProfile.primaryColor))
+            }
         }
-        .environmentObject(clubManager)
-        .accentColor(Color(clubManager.clubProfile.primaryColor))
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

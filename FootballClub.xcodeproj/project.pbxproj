@@ -39,6 +39,12 @@
 		185573202E106DC600F15EBB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1855731F2E106DC600F15EBB /* UserNotifications.framework */; };
 		185573222E106DDD00F15EBB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185573212E106DDC00F15EBB /* CoreLocation.framework */; };
 		185573242E106DE800F15EBB /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185573232E106DE800F15EBB /* Charts.framework */; };
+		185573262E107B3B00F15EBB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573252E107B3B00F15EBB /* LoadingView.swift */; };
+		185573282E107B8200F15EBB /* InteractiveChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573272E107B8200F15EBB /* InteractiveChartView.swift */; };
+		1855732A2E107BF000F15EBB /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573292E107BF000F15EBB /* CalendarView.swift */; };
+		1855732C2E107C3200F15EBB /* ValueAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855732B2E107C3200F15EBB /* ValueAdjustmentView.swift */; };
+		185573302E1086C700F15EBB /* ChartComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855732F2E1086C700F15EBB /* ChartComponents.swift */; };
+		185573322E108CD100F15EBB /* PlayerRankingComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185573312E108CD100F15EBB /* PlayerRankingComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +83,12 @@
 		1855731F2E106DC600F15EBB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		185573212E106DDC00F15EBB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		185573232E106DE800F15EBB /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		185573252E107B3B00F15EBB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		185573272E107B8200F15EBB /* InteractiveChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveChartView.swift; sourceTree = "<group>"; };
+		185573292E107BF000F15EBB /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1855732B2E107C3200F15EBB /* ValueAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueAdjustmentView.swift; sourceTree = "<group>"; };
+		1855732F2E1086C700F15EBB /* ChartComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartComponents.swift; sourceTree = "<group>"; };
+		185573312E108CD100F15EBB /* PlayerRankingComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRankingComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,17 +167,23 @@
 				185572FC2E106BDC00F15EBB /* AddPlayerView.swift */,
 				185572FD2E106BDC00F15EBB /* AddTrainingView.swift */,
 				185572FB2E106BDC00F15EBB /* AdminView.swift */,
+				1855732B2E107C3200F15EBB /* ValueAdjustmentView.swift */,
 				185572F52E106BDC00F15EBB /* AnalyticsView.swift */,
+				1855732F2E1086C700F15EBB /* ChartComponents.swift */,
+				185573022E106BDD00F15EBB /* HomeView.swift */,
+				185573312E108CD100F15EBB /* PlayerRankingComponents.swift */,
 				185572F72E106BDC00F15EBB /* EditClubProfileView.swift */,
 				185572FE2E106BDC00F15EBB /* EditPlayerView.swift */,
-				185573022E106BDD00F15EBB /* HomeView.swift */,
+				185573292E107BF000F15EBB /* CalendarView.swift */,
 				185572FA2E106BDC00F15EBB /* MatchDetailView.swift */,
 				185572FF2E106BDC00F15EBB /* MatchesView.swift */,
 				185573032E106BDD00F15EBB /* PlayerDetailView.swift */,
 				185573012E106BDD00F15EBB /* PlayersView.swift */,
 				185572F82E106BDC00F15EBB /* ProfileView.swift */,
+				185573272E107B8200F15EBB /* InteractiveChartView.swift */,
 				185572F62E106BDC00F15EBB /* ScheduleView.swift */,
 				185573002E106BDD00F15EBB /* TrainingDetailView.swift */,
+				185573252E107B3B00F15EBB /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,19 +302,25 @@
 				185572F42E106B8600F15EBB /* WeatherService.swift in Sources */,
 				185572EC2E106B4800F15EBB /* ClubModels.swift in Sources */,
 				185573122E106BDD00F15EBB /* PlayerDetailView.swift in Sources */,
+				185573302E1086C700F15EBB /* ChartComponents.swift in Sources */,
 				185573042E106BDD00F15EBB /* AnalyticsView.swift in Sources */,
 				185573062E106BDD00F15EBB /* EditClubProfileView.swift in Sources */,
+				1855732C2E107C3200F15EBB /* ValueAdjustmentView.swift in Sources */,
+				185573322E108CD100F15EBB /* PlayerRankingComponents.swift in Sources */,
 				185572D62E106ABE00F15EBB /* ContentView.swift in Sources */,
 				185573092E106BDD00F15EBB /* MatchDetailView.swift in Sources */,
 				185573102E106BDD00F15EBB /* PlayersView.swift in Sources */,
 				185572D42E106ABE00F15EBB /* FootballClubApp.swift in Sources */,
 				1855730C2E106BDD00F15EBB /* AddTrainingView.swift in Sources */,
+				185573282E107B8200F15EBB /* InteractiveChartView.swift in Sources */,
 				185572F02E106B7100F15EBB /* AnalyticsService.swift in Sources */,
+				1855732A2E107BF000F15EBB /* CalendarView.swift in Sources */,
 				185573152E106CF300F15EBB /* FootballClub.xcdatamodeld in Sources */,
 				1855730F2E106BDD00F15EBB /* TrainingDetailView.swift in Sources */,
 				185572F22E106B7600F15EBB /* NotificationManager.swift in Sources */,
 				185573052E106BDD00F15EBB /* ScheduleView.swift in Sources */,
 				1855730D2E106BDD00F15EBB /* EditPlayerView.swift in Sources */,
+				185573262E107B3B00F15EBB /* LoadingView.swift in Sources */,
 				185573082E106BDD00F15EBB /* AddMatchView.swift in Sources */,
 				1855730E2E106BDD00F15EBB /* MatchesView.swift in Sources */,
 				1855730A2E106BDD00F15EBB /* AdminView.swift in Sources */,
